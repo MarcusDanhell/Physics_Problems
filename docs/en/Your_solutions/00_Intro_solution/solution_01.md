@@ -1,5 +1,5 @@
 # Section 0 — Mathematical Foundations  
-## 1. Vector Algebra (Step-by-step solution)
+## 1. Vector Algebra
 
 We are given two vectors in $\mathbb{R}^3$:
 

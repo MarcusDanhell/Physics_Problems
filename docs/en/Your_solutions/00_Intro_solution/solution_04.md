@@ -10,8 +10,6 @@ Before solving the problem, it is essential to understand the variables involved
 * **The Pendulum Formula:**
     $$T = 2\pi \sqrt{\frac{L}{g}}$$
 
----
-
 ## 2. Solving the Problem
 
 **Task:** Rearrange the equation $T = 2\pi \sqrt{\frac{L}{g}}$ to solve for $g$.
