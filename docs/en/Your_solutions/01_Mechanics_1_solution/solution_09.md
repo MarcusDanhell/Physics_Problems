@@ -5,7 +5,6 @@ $$p = m \cdot v$$
 * **$m$** = mass (must be in kilograms, kg)
 * **$v$** = velocity (meters per second, m/s)
 
-Even a very light object (like a bullet) can have massive momentum if it moves fast enough. Conversely, a very heavy object (like a ship) has huge momentum even if it moves slowly.
 
 ### 2. The Comparison
 To compare the fly and the tennis ball, we first convert their weights to the standard unit of **kilograms**:
