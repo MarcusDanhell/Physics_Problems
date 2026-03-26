@@ -20,6 +20,3 @@ To compare the fly and the tennis ball, we first convert their weights to the st
     * Velocity ($v$): $1\text{ m/s}$
     * Momentum: $0.060 \times 1 = \mathbf{0.06\text{ kg}\cdot\text{m/s}}$
 
-
-
-**Conclusion:** Even though the fly is moving **10 times faster** than the ball, the ball is **30 times heavier**. Because the mass difference is greater than the speed difference, the **tennis ball** has more momentum.
