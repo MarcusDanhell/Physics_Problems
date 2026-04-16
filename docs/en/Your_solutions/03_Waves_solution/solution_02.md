@@ -1,4 +1,4 @@
-##Electric Potential
+## Electric Potential
 
 ### Step 1: Identify the Position of the Charges
 The charges are placed at the corners of a square with side length $s = 1.0 \text{ m}$. In a coordinate system where the center is $(0,0)$, the corners are located at $(\pm 0.5, \pm 0.5)$.
