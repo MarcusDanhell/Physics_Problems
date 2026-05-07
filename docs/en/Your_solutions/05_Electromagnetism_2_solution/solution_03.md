@@ -1,4 +1,4 @@
-## Biot - Savart Law
+## 3. Biot - Savart Law
 
 To calculate the magnetic field produced by a small current-carrying segment, we use the **Biot-Savart Law**:
 
@@ -26,4 +26,4 @@ $$B = 10^{-7} \times 7.5$$
 ### Final Result:
 The magnetic field at point $P$ is:
 **$$B = 7.5 \times 10^{-7} \text{ T}$$**
-(or $0.75 \text{ \mu T}$)
+(or $0.75 \text{ \muT }$)
