@@ -1,4 +1,4 @@
-## 
+## Biot - Savart Law
 
 To calculate the magnetic field produced by a small current-carrying segment, we use the **Biot-Savart Law**:
 
