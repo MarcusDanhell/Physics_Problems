@@ -2,170 +2,85 @@
 
 ## 5 Kirchhoff's Laws
 
-Let the currents be:
+To find the currents $I_1$, $I_2$, and $I_3$ going through the resistors $R_1$, $R_2$, and $R_3$ (where $R_3$ represents the internal resistance $r_w = 1\ \Omega$ of the right loop), we apply Kirchhoff's laws.
 
-* (I_1) through (R_1=20\Omega) (left branch),
-* (I_2) through (R_2=10\Omega) (middle branch),
-* (I_3) through the right branch with source (E_2).
+### 1. Define Current Directions and Loops
 
-We’ll use Kirchhoff’s laws.
-
----
-
-# 1. Choose current directions
-
-Assume:
-
-* (I_1): clockwise in the left loop,
-* (I_3): clockwise in the right loop,
-* (I_2): downward through (R_2).
-
-At the top junction, currents (I_1) and (I_3) flow into the shared resistor branch, so:
-
-[
-I_2 = I_1 + I_3
-]
-
-This is Kirchhoff’s Current Law (KCL).
+* Let $I_1$ be the current in the left loop, flowing counter-clockwise (out of the positive terminal of $\mathcal{E}_1$).
+* Let $I_3$ be the current in the right loop, flowing counter-clockwise (out of the positive terminal of $\mathcal{E}_2$).
+* Let $I_2$ be the current flowing downward through the shared central resistor $R_2$.
 
 ---
 
-# 2. Left loop equation
+### 2. Kirchhoff's Current Law (KCL)
 
-The left loop contains:
+At the top-right node where the branches meet:
 
-* resistor (R_1=20\Omega),
-* internal resistance (r_1=1\Omega),
-* shared resistor (R_2=10\Omega),
-* source (E_1=4.5\text{ V}).
 
-Applying Kirchhoff’s Voltage Law (KVL):
-
-[
-20I_1 + 1I_1 + 10I_2 = 4.5
-]
-
-So:
-
-[
-21I_1 + 10I_2 = 4.5
-\tag{1}
-]
+$$I_1 + I_3 = I_2$$
 
 ---
 
-# 3. Right loop equation
+### 3. Kirchhoff's Voltage Law (KVL)
 
-Right loop contains:
+**Left Loop (Counter-clockwise):**
 
-* internal resistance (r_2=1\Omega),
-* resistor (R_2=10\Omega),
-* source (E_2=9\text{ V}).
 
-KVL gives:
+$$\mathcal{E}_1 - I_1 R_1 - I_2 R_2 - I_1 r_w = 0$$
 
-[
-1I_3 + 10I_2 = 9
-]
+$$4.5 - 20I_1 - 10I_2 - 1I_1 = 0$$
 
-or
+$$21I_1 + 10I_2 = 4.5 \quad \text{--- (Equation 1)}$$
 
-[
-I_3 + 10I_2 = 9
-\tag{2}
-]
+**Right Loop (Counter-clockwise):**
 
----
 
-# 4. Use the junction equation
+$$\mathcal{E}_2 - I_3 r_w - I_2 R_2 = 0$$
 
-[
-I_2 = I_1 + I_3
-\tag{3}
-]
+$$9 - 1I_3 - 10I_2 = 0$$
 
-Now solve the system.
+$$1I_3 + 10I_2 = 9 \quad \text{--- (Equation 2)}$$
 
 ---
 
-# 5. Solve the equations
+### 4. Solve the System of Equations
 
-From (2):
+Substitute $I_3 = I_2 - I_1$ into Equation 2:
 
-[
-I_3 = 9 - 10I_2
-]
 
-Using (3):
+$$(I_2 - I_1) + 10I_2 = 9$$
 
-[
-I_2 = I_1 + 9 - 10I_2
-]
+$$-I_1 + 11I_2 = 9 \implies I_1 = 11I_2 - 9$$
 
-[
-11I_2 = I_1 + 9
-]
+Substitute this expression for $I_1$ into Equation 1:
 
-[
-I_1 = 11I_2 - 9
-\tag{4}
-]
 
-Substitute into (1):
+$$21(11I_2 - 9) + 10I_2 = 4.5$$
 
-[
-21(11I_2 - 9) + 10I_2 = 4.5
-]
+$$231I_2 - 189 + 10I_2 = 4.5$$
 
-[
-231I_2 - 189 + 10I_2 = 4.5
-]
+$$241I_2 = 193.5$$
 
-[
-241I_2 = 193.5
-]
+$$I_2 = \frac{193.5}{241} \approx 0.803\text{ A}$$
 
-[
-I_2 \approx 0.803\text{ A}
-]
+Now, find $I_1$:
 
-Now compute the others.
 
-From (4):
+$$I_1 = 11(0.803) - 9 \approx -0.167\text{ A}$$
 
-[
-I_1 = 11(0.803) - 9
-]
 
-[
-I_1 \approx -0.163\text{ A}
-]
+*(The negative sign indicates that $I_1$ actually flows clockwise, opposite to our assumed direction).*
 
-From (2):
+Now, find $I_3$:
 
-[
-I_3 = 9 - 10(0.803)
-]
 
-[
-I_3 \approx 0.967\text{ A}
-]
+$$I_3 = I_2 - I_1 = 0.803 - (-0.167) \approx 0.970\text{ A}$$
 
 ---
 
-# 6. Final answer
+### Final Answer
 
-[
-\boxed{I_1 \approx -0.16\text{ A}}
-]
-
-[
-\boxed{I_2 \approx 0.80\text{ A}}
-]
-
-[
-\boxed{I_3 \approx 0.97\text{ A}}
-]
-
-The negative sign for (I_1) means the actual current through (R_1) flows opposite to the direction we originally assumed.
+* **$I_1 = -0.167\text{ A}$** (or $0.167\text{ A}$ in the clockwise direction)
+* **$I_2 = 0.803\text{ A}$** (downward through $R_2$)
+* **$I_3 = 0.970\text{ A}$** (counter-clockwise through the right loop)
 
