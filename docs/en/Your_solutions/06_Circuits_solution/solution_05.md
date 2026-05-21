@@ -85,7 +85,7 @@ $$I_1 = \frac{4.5 - \frac{1935}{241}}{21} = -\frac{81}{482}\ \text{A} \approx -0
 
 
 
-*(The negative sign simply indicates that $I_1$ actually flows counter-clockwise, away from Node X).*
+*(The negative sign simply indicates that I1 actually flows counter-clockwise, away from Node X).*
 * **Current $I_2$:**
 
 $$I_2 = \frac{\frac{1935}{241}}{10} = \frac{387}{482}\ \text{A} \approx 0.803\ \text{A}$$
