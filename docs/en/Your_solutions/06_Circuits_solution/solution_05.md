@@ -69,7 +69,7 @@ Now, find $I_1$:
 $$I_1 = 11(0.803) - 9 \approx -0.167\text{ A}$$
 
 
-*(The negative sign indicates that $I_1$ actually flows clockwise, opposite to our assumed direction).*
+*(The negative sign indicates that I1 actually flows clockwise, opposite to our assumed direction).*
 
 Now, find $I_3$:
 
