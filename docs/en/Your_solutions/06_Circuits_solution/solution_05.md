@@ -1,6 +1,6 @@
 
 
-To solve for the currents $I_1$, $I_2$, and $I_3$, we can apply **Kirchhoff's Laws** using the node-voltage method, which provides a direct and clean way to analyze multi-loop circuits.
+## 5 Kirchhoff's Laws
 
 ### Step 1: Define Nodes and Current Directions
 
